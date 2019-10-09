@@ -1,0 +1,242 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.7;
+  color: #fff;
+  font-family: "Poppins";
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  display: block;
+  margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading-1 {
+  font-size: 3.5rem;
+  font-weight: normal;
+}
+
+.heading-2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.heading-3 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.nav {
+  padding: 2em;
+}
+
+.nav #menu {
+  cursor: pointer;
+}
+
+.nav i {
+  font-size: 2.1rem;
+  z-index: 33;
+}
+
+.nav .dark {
+  color: #000;
+}
+
+.nav .show {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.nav .container {
+  margin: 0 auto;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav .container .logo-text {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  z-index: 33;
+}
+
+.nav-open {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 50vh;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 15% 1fr 1fr 15%;
+      grid-template-columns: 15% 1fr 1fr 15%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  z-index: 3;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.nav-open p {
+  margin-bottom: 0;
+}
+
+.nav-open i {
+  display: inline-block;
+  margin-right: 0.6em;
+}
+
+.nav-open .block-1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+.nav-open .block-2 {
+  grid: 3 / 4;
+}
+
+.header {
+  background: radial-gradient(#2b3760, #0b1023);
+}
+
+.header .photographer {
+  padding-bottom: 6.3em;
+  margin: 0 auto;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+}
+
+.header .photographer-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header .photographer-list {
+  display: -ms-grid;
+  display: grid;
+}
+
+.header .photographer-list ul {
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  justify-items: flex-end;
+  grid-gap: 3em;
+}
+
+.header .photographer-list ul p {
+  display: inline-block;
+  margin-right: 2em;
+}
+
+.header .photographer-list a {
+  font-size: 1.7em;
+  color: #fff;
+}
+
+.header .photographer .hero {
+  margin-top: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+}
+
+.header .photographer .hero a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .photographer .hero img {
+  height: 400px;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  cursor: pointer;
+  display: block;
+}
+
+.header .photographer .hero .model-right {
+  -webkit-transform: translate(0%, 10%);
+          transform: translate(0%, 10%);
+}
+
+.header .photographer .hero .model-left {
+  -webkit-transform: translate(0%, -10%);
+          transform: translate(0%, -10%);
+}
+
+.header .photographer .hero:hover .model-left {
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+}
+
+.header .photographer .hero:hover .model-right {
+  -webkit-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+}
+/*# sourceMappingURL=main.css.map */
